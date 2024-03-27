@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 8080
-      targetPort: 8080
+      port: 8080  # svc 포트 --> 인그래서 servicePort와 맞춰야함
+      targetPort: 8080 #pod의 포트 
   selector:
     app: game-2048
